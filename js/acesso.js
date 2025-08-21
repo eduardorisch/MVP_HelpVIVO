@@ -13,7 +13,7 @@ document.querySelector('form').addEventListener('submit', (e) => {
     if(passColaborador === formPassword && matColaborador === formMatricula){
         window.location.href = '/html/home.html';
     } else {
-        alert('Você errou ou senha ou login!!!')
+        alert('Você errou ou senha ou login!!!');
     }
     
-})
+});

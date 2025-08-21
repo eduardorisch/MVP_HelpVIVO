@@ -1,31 +1,184 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <script> window.chtlConfig = { chatbotId: "2777188648" } </script>
-<script async data-id="2777188648" id="chtl-script" type="text/javascript" src="https://chatling.ai/js/embed.js"></script>
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" 
-    integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script async data-id="2777188648" id="chtl-script" type="text/javascript"
+        src="https://chatling.ai/js/embed.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
     <link rel="stylesheet" href="/css/app.css">
 </head>
+
 <body>
-    <div class="bg-roxo d-inline-flex flex-column px-4 vh-100">
-        <p class="fs-2 text-light fw-bold">HelpVIVO</p>
-        <nav class="nav flex-column">
-        <a class="nav-link fs-4 text-light" href="/html/home.html">Home</a>
-        <a class="nav-link fs-4 text-light" href="/html/videos.html">Videos</a>
-        <a class="nav-link fs-4 text-light" href="/html/perfil.html">Perfil</a>
-        <a class="nav-link fs-4 text-light" href="/html/acessos.html">Acessos</a>
-        </nav>
-    </div>
+    <!--sidebar -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2 bg-roxo d-flex flex-column px-4 vh-100 text-light">
+                <p class="fs-2 fw-bold">HelpVIVO</p>
+                <nav class="nav flex-column gap-2">
+                    <a class="nav-link fs-5 text-light" href="/html/home.html"><i class="bi bi-house"></i> Home</a>
+                    <a class="nav-link fs-5 text-light" href="/html/videos.html"><i class="bi bi-camera-reels"></i>
+                        Videos</a>
+                    <a class="nav-link fs-5 text-light" href="/html/perfil.html"><i class="bi bi-person-circle"></i>
+                        Perfil</a>
+                    <a class="nav-link fs-5 text-light" href="/html/acessos.html"><i class="bi bi-key"></i> Acessos</a>
+                </nav>
+            </div>
+            <!--sidebar -->
 
-    <div class="d-inline-flex align-items-center vw-100 position-absolute top-0 start-50 mt-5">
-        <p class="fs-2 text-center text-dark">Bem vindo João Vitor</p>
-    </div>
+            <!--boas vindas e progresso-->
+            <div class="col-10 d-flex flex-column align-items-center mt-5">
+                <div class="text-center w-75">
+                    <h2>Bem vindo, João Vitor</h2>
+                    <p>Onboarding </p>
+                    <div class="progress mb-4" style="height: 15px;">
+                        <div id="progress-bar" class="progress-bar bg-roxo" role="progressbar" style="width: 0%;"
+                            aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                </div>
+                <!--boas vindas e progresso-->
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+                <!--cards dos questionarios-->
+                <!--1º linha-->
+                <div class="row g-3 w-75 justify-content-center">
+
+                    <div class="col">
+                        <div class="card shadow-sm p-3 h-100" role="button" data-bs-toggle="modal"
+                            data-bs-target="#modalQ1">
+                            <div class="card-body d-flex justify-content-between align-items-center">
+                                <span>To na VIVO!!!</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm p-3 h-100" role="button" data-bs-toggle="modal"
+                            data-bs-target="#modalQ2">
+                            <div class="card-body d-flex justify-content-between align-items-center">
+                                <span>Treinamentos Iniciais</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm p-3 h-100" role="button" data-bs-toggle="modal"
+                            data-bs-target="#modalQ3">
+                            <div class="card-body d-flex justify-content-between align-items-center">
+                                <span>Vibe</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--1º linha-->
+
+                <!--2º linha-->
+                <div class="row g-3 w-75 justify-content-center">
+
+                    <div class="col">
+                        <div class="card shadow-sm p-3 h-100" role="button" data-bs-toggle="modal"
+                            data-bs-target="#modalQ1">
+                            <div class="card-body d-flex justify-content-between align-items-center">
+                                <span>To na TI</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm p-3 h-100" role="button" data-bs-toggle="modal"
+                            data-bs-target="#modalQ2">
+                            <div class="card-body d-flex justify-content-between align-items-center">
+                                <span>Questionário 1</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm p-3 h-100" role="button" data-bs-toggle="modal"
+                            data-bs-target="#modalQ3">
+                            <div class="card-body d-flex justify-content-between align-items-center">
+                                <span>Trilha Tecninca</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--2º linha-->
+
+                <!--3º linha-->
+                <div class="row g-3 w-75 justify-content-center">
+                    <div class="col-4">
+                        <div class="card shadow-sm p-3 h-100" role="button" data-bs-toggle="modal"
+                            data-bs-target="#modalQ3">
+                            <div class="card-body d-flex justify-content-between align-items-center">
+                                <span>Questionario 2</span>
+                                <i class="bi bi-arrow-right"></i>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <!--3º linha-->
+                <!--cards dos questionarios-->
+                
+                <!-- Modal Questionário 1 -->
+                <div class="modal fade" id="modalQ1" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">To na VIVO!!!</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form id="formQ1">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam similique animi voluptatibus minus 
+                                        impedit, dolorum quaerat nam ipsam error reiciendis sequi repellat cumque corporis ducimus? 
+                                        Perspiciatis porro rem laboriosam quis!
+                                    </p>
+                                    <button type="submit" class="btn bg-roxo text-light">Entendido!!!</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Modal Questionário 2 -->
+                <div class="modal fade" id="modalQ2" tabindex="-1">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">Treinamentos Iniciais</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form id="formQ2">
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                                        Quasi nihil quae iure modi odit aliquam dolorum, at asperiores similique velit. 
+                                        Error labore ea voluptate nemo voluptas qui inventore, dolorem aliquam.
+                                    </p>
+                                    <button type="submit" class="btn bg-roxo text-light">Entendido!!!</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+                    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+                    crossorigin="anonymous"></script>
+                <script src="/js/progresso.js"></script>
 </body>
+
 </html>
