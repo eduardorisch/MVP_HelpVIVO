@@ -30,7 +30,7 @@ function checkAchievement() {
     const achievementList = document.getElementById("achievements");
     const li = document.createElement("li");
     li.textContent = achievements[index];
-    li.classList.add("list-group-item", "list-group-item-success");
+    li.classList.add("list-group-item");
     achievementList.appendChild(li);
   }
 }
