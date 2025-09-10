@@ -24,6 +24,7 @@
                     <a class="nav-link fs-5 text-light" href="/html/home.html"><i class="bi bi-house"></i> Home</a>
                     <a class="nav-link fs-5 text-light" href="/html/videos.html"><i class="bi bi-camera-reels"></i> Videos</a>
                     <a class="nav-link fs-5 text-light" href="/html/perfil.html"><i class="bi bi-person-circle"></i> Perfil</a>
+                    <a class="nav-link fs-5 text-light" href="/html/chat.html"><i class="bi bi-chat-left"></i> Chat</a>
                     <a class="nav-link fs-5 text-light" href="/html/acessos.html"><i class="bi bi-key"></i> Acessos</a>
                     <a class="nav-link fs-5 text-light" href="/html/index.html"><i class="bi bi-door-open"></i> Sair</a>
                 </nav>
@@ -32,13 +33,8 @@
 
             <!--boas vindas e progresso-->
             <div class="col-10 d-flex flex-column align-items-center mt-5">
-                <div class="text-center w-75">
+                <div class="text-center w-75 mb-4" >
                     <h2>Bem vindo, João Vitor</h2>
-                    <p>Onboarding </p>
-                    <div class="progress mb-4">
-                        <div id="progress-bar" class="progress-bar bg-roxo" role="progressbar"
-                        aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                    </div>
                 </div>
                 <!--boas vindas e progresso-->
 
@@ -96,7 +92,7 @@
                         <div class="card shadow-sm p-3 h-100" role="button" data-bs-toggle="modal"
                             data-bs-target="#modalQ5">
                             <div class="card-body d-flex justify-content-between align-items-center">
-                                <span>Questionário 1</span>
+                                <span>Feedback 1</span>
                                 <i class="bi bi-arrow-right"></i>
                             </div>
                         </div>
@@ -121,7 +117,7 @@
                         <div class="card shadow-sm p-3 h-100" role="button" data-bs-toggle="modal"
                             data-bs-target="#modalQ7">
                             <div class="card-body d-flex justify-content-between align-items-center">
-                                <span>Questionário 2</span>
+                                <span>Feedback 2</span>
                                 <i class="bi bi-arrow-right"></i>
                             </div>
                         </div>
@@ -141,11 +137,20 @@
                             </div>
                             <div class="modal-body">
                                 <form id="formQ1">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam similique animi voluptatibus minus 
-                                        impedit, dolorum quaerat nam ipsam error reiciendis sequi repellat cumque corporis ducimus? 
-                                        Perspiciatis porro rem laboriosam quis!
-                                    </p>
-                                    <button type="submit" class="btn bg-roxo text-light">Entendido!!!</button>
+                                    <p>Olá, João Vitor! Seja muito bem-vindo à VIVO! 
+                                        Estamos felizes em ter você conosco e queremos garantir 
+                                        que sua integração seja tranquila e produtiva. E nós preocupados com isso
+                                        fizemos algumas orientações para você, esse site que você esta usando é para
+                                        te ajudar no seu início aqui, com isso ele oferece as suas ferramentas, videos 
+                                        explicativos e chat com o seu Buddy e Gestor, junto com uma assistente virtual
+                                        aonde ela te ajudara a tirar dúvidas.</p>
+                                        <h6>As suas primeiras ferramentas serão essas:</h6>
+                                        <ul>
+                                            <li>Slack</li>
+                                            <li>Github</li>
+                                            <li>Trello</li>
+                                        </ul>
+                                        <a href="/html/acessos.html" class="text-roxo">Pagina das Ferramentas</a>
                                 </form>
                             </div>
                         </div>
@@ -163,11 +168,14 @@
                             </div>
                             <div class="modal-body">
                                 <form id="formQ2">
-                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                                        Quasi nihil quae iure modi odit aliquam dolorum, at asperiores similique velit. 
-                                        Error labore ea voluptate nemo voluptas qui inventore, dolorem aliquam.
-                                    </p>
-                                    <button type="submit" class="btn bg-roxo text-light">Entendido!!!</button>
+                                    <p>Esta seção é para mostrar os treinamentos iniciais para a nossa empresa.</p>
+                                    <h6>Os videos são:</h6>
+                                    <ul>
+                                        <li>A Cultura da VIVO</li>
+                                        <li>Primeiros 30 Dias: O que esperamos de você</li>
+                                        <li>Dia a dia do desenvolvedor aqui</li>
+                                    </ul>
+                                    <a href="/html/videos.html" class="text-roxo">Pagina dos Videos</a>
                                 </form>
                             </div>
                         </div>
@@ -198,7 +206,7 @@
                                         <input class="form-check-input" type="checkbox" value="" id="checkDefault">
                                         <label class="form-check-label" for="checkDefault">Beneficio 3</label>
                                     </div>
-                                    <button type="submit" class="btn bg-roxo text-light">Enviar!!!</button>
+                                    <button type="submit" class="btn btn-primary text-light">Enviar!!!</button>
                                 </form>
                             </div>
                         </div>
@@ -218,9 +226,7 @@
                                 <form id="formQ4">
                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                                         Quasi nihil quae iure modi odit aliquam dolorum, at asperiores similique velit. 
-                                        Error labore ea voluptate nemo voluptas qui inventore, dolorem aliquam.
-                                    </p>
-                                    <button type="submit" class="btn bg-roxo text-light">Entendido!!!</button>
+                                        Error labore ea voluptate nemo voluptas qui inventore, dolorem aliquam.</p>
                                 </form>
                             </div>
                         </div>
@@ -233,7 +239,7 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title">Questionario 1</h5>
+                                <h5 class="modal-title">Feedback 1</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                             </div>
                             <div class="modal-body">
@@ -264,7 +270,7 @@
                                         <input class="form-check-input" type="checkbox" value="" id="checkDefault">
                                         <label class="form-check-label" for="checkDefault">Resposta 3</label>
                                     </div>
-                                    <button type="submit" class="btn bg-roxo text-light">Entendido!!!</button>
+                                    <button type="submit" class="btn btn-primary text-light">Entendido!!!</button>
                                 </form>
                             </div>
                         </div>
@@ -295,7 +301,7 @@
                                         <input class="form-check-input" type="checkbox" value="" id="checkDefault">
                                         <label class="form-check-label" for="checkDefault">Trilha 3</label>
                                     </div>
-                                    <button type="submit" class="btn bg-roxo text-light">Enviar!!!</button>
+                                    <button type="submit" class="btn btn-primary text-light">Enviar!!!</button>
                                 </form>
                             </div>
                         </div>
@@ -308,7 +314,7 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <h5 class="modal-title">Questionário 2</h5>
+                                <h5 class="modal-title">Feedback 2</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                             </div>
                             <div class="modal-body">
@@ -331,7 +337,7 @@
                                         <label for="exampleInputEmail1" class="form-label">Resposta:</label>
                                             <input type="text" class="form-control" id="cxTexto">
                                         </div>
-                                    <button type="submit" class="btn bg-roxo text-light">Enviar!!!</button>
+                                    <button type="submit" class="btn btn-primary text-light">Enviar!!!</button>
                                 </form>
                             </div>
                         </div>
