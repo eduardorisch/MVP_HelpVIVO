@@ -7,8 +7,14 @@
     height: 20vh;
 }
 
+.img-chat{
+  width: 38vh;
+  height: 25vh;
+}
+
 .text-roxo {
   color: #732793;
+  text-decoration: none;
 }
 
 .btn-primary {
